@@ -434,7 +434,7 @@ h2{
 @media (max-width: 768px) {
   .photo-grid {
     grid-template-columns: 1fr; /* uma coluna só */
-    grid-auto-rows: 300px;      /* todas do mesmo tamanho */
+    /* grid-auto-rows: 300px;      todas do mesmo tamanho */
   }
 
   .photo-1,
@@ -451,9 +451,11 @@ h2{
 
   .polaroid {
     height: 100%;
+    width: 100%;
   }
 
   .polaroid img {
-    object-fit: contain; /* mantém proporção */
+    object-fit: cover; /* mantém proporção */
+    max-height: 278px;
   }
 }
