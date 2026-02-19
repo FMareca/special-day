@@ -75,3 +75,27 @@ function populateHistorySection() {
 
 // run when the DOM is ready
 document.addEventListener('DOMContentLoaded', populateHistorySection);
+// use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(ScrollTrigger,SplitText,CustomEase)
+  
+  const tlHero = gsap.timeline();
+
+  tlHero.from(".hero-text", {duration: 1.5, opacity: 0, y: 100, ease: "power3.out"})
+    .from(".hero-image", {duration: 1.5, opacity: 0, x: 100, ease: "power3.out"}, "-=1.2")
+
+  const tlHistoria = gsap.timeline()
+
+  gsap.from(".photo-grid .polaroid", {
+  opacity: -2,
+  duration: 1,
+  stagger: 0.3,
+  ease: "power3.out",
+  clearProps: "transform",
+  scrollTrigger: {
+    trigger: "#historia",
+    start: "top 70%",
+    once: true
+    }
+  });
+})
