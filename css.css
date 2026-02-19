@@ -407,6 +407,10 @@ h2{
 
 @media (max-width: 900px) {
 
+  .historia-title, .subtitle{
+    text-align: center;
+  }  
+
   .hero {
     min-height: auto;
     padding: 3rem 1.5rem 11rem 1.5rem;
@@ -446,5 +450,6 @@ h2{
   .polaroid {
     max-width: 240px;
     transform: rotate(0deg);
+    margin: 0 auto;
   }
 }
