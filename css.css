@@ -362,17 +362,6 @@ h2{
     grid-template-rows: auto;
   }
 
-  .photo-1,
-  .photo-2,
-  .photo-3,
-  .photo-4,
-  .photo-5,
-  .photo-6,
-  .photo-7 {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
   .polaroid {
     transform: rotate(0deg);
   }
@@ -439,5 +428,32 @@ h2{
     max-width: 240px;
     transform: rotate(0deg);
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: 1fr; /* uma coluna só */
+    grid-auto-rows: 300px;      /* todas do mesmo tamanho */
+  }
+
+  .photo-1,
+  .photo-2,
+  .photo-3,
+  .photo-4,
+  .photo-5,
+  .photo-6,
+  .photo-7 {
+    grid-column-start: auto;
+    grid-row-start: auto;
+    grid-row: span 1;
+  }
+
+  .polaroid {
+    height: 100%;
+  }
+
+  .polaroid img {
+    object-fit: contain; /* mantém proporção */
   }
 }
