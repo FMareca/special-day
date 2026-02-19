@@ -179,8 +179,8 @@ h2{
   border-radius: 6px;
   flex: 1;
   width: 100%;
-  object-fit: contain;
-  max-heigh: 200px
+  object-fit: cover;
+  max-height: 200px;
 }
 
 .polaroid span {
@@ -225,13 +225,13 @@ h2{
   grid-row: span 2 / span 2;
 }
 
-.photo-1 { grid-column-start: 1; grid-row-start: 2; }
+.photo-1 { grid-column-start: 1; grid-row-start: 1; }
 .photo-2 { grid-column-start: 2; grid-row-start: 2; }
-.photo-3 { grid-column-start: 3; grid-row-start: 3; }
+.photo-3 { grid-column-start: 3; grid-row-start: 1; }
 .photo-4 { grid-column-start: 4; grid-row-start: 1; }
 .photo-5 { grid-column-start: 5; grid-row-start: 2; }
 .photo-6 { grid-column-start: 2; grid-row-start: 4; }
-.photo-7 { grid-column-start: 4; grid-row-start: 3; }
+.photo-7 { grid-column-start: 3; grid-row-start: 4; }
 
 /* ROTEIRO */
 .roteiro-section {
