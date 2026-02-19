@@ -56,7 +56,7 @@ function populateHistorySection() {
   // clone and shuffle data so we don't mutate original
   const randomPhotos = shuffleArray([...photoData]);
 
-  randomPhotos.slice(0, 7).forEach((photo, index) => {
+  randomPhotos.slice(0, 8).forEach((photo, index) => {
     const div = document.createElement('div');
     div.className = `polaroid photo-${index + 1}`;
 
