@@ -19,7 +19,7 @@ const filenames = [
   { foto: 'foto15.jpeg', descricao: 'O melhor abraço do mundo' },
   { foto: 'foto16.jpeg', descricao: 'Lindos e bobos' },
   { foto: 'foto17.jpeg', descricao: 'Gótica, emo e MARAVILHOSA' },
-  { foto: 'foto18.jpeg', descricao: '1o musical' },
+  { foto: 'foto18.jpeg', descricao: '1º musical' },
   { foto: 'foto19.jpeg', descricao: 'A minha paixão vendo sua paixão' },
   { foto: 'foto20.jpeg', descricao: 'Detalhes, Carinhos' },
   { foto: 'foto22.jpeg', descricao: 'Sem foto por favor (lindissima)' },

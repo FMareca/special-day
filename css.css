@@ -433,8 +433,9 @@ h2{
 
 @media (max-width: 768px) {
   .photo-grid {
-    grid-template-columns: 1fr; /* uma coluna só */
-    /* grid-auto-rows: 300px;      todas do mesmo tamanho */
+    display: flex;
+    flex-direction: column;
+    gap: 0.725rem;
   }
 
   .photo-1,
