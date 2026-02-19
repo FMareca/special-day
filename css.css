@@ -174,16 +174,15 @@ h2{
 
 .polaroid img {
   border-radius: 6px;
-  aspect-ratio: 3 / 4;
   width: 100%;
-  max-height: 300px; /* ajuste como quiser */
+  max-height: 350px;
   object-fit: contain;
 }
 
 .polaroid span {
   display: block;
   margin-top: 0.5rem;
-  font-size: 0.725rem;
+  font-size: 1rem;
 }
 
 /* GALERIA */
